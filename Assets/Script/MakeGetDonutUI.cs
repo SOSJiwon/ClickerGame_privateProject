@@ -2,34 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 
 public class MakeGetDonutUI : MonoBehaviour
 {
     public static MakeGetDonutUI instance;
 
     [Header("UI TMP")]
-    public GameObject moneyUI;
-    public TextMeshProUGUI getMoney;
+    public GameObject prefab;
+    public Queue<GameObject> savePrefabs = new Queue<GameObject>();
 
-    private int randomPosition;
 
     private void Awake()
     {
         instance = this;
     }
 
-    void Start()
-    {
-        Instantiate(moneyUI, new Vector3(1,1,1), Quaternion.identity);
-        moneyUI.SetActive(false);
-    }
 
     public IEnumerator PlayerGetDonut()
     {
-        getMoney.text = $"+ {GameManager.instance.getDonutPrice.ToString()}³É";
-        moneyUI.SetActive(true);
+        savePrefabs.Enqueue(Instantiate(prefab, new Vector3(Random.Range(300, 600),
+            Random.Range(500, 600), 1f), Quaternion.identity, transform));
+
         yield return new WaitForSeconds(1f);
-        moneyUI.SetActive(false);
+        GameObject destroyPrefabs = savePrefabs.Dequeue();
+        Destroy(destroyPrefabs);
+
     }
 
 }

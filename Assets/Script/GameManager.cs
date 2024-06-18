@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public DonutSO NowDonutLevel;
+    public Objectpool pool;
 
     [Header("플레이어 정보")]
     public int playerMoney = 0; // 현재 돈
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
     {
         if (instance != null) Destroy(gameObject);
         instance = this;
+
+        pool = GetComponent<Objectpool>();
     }
     void Start()
     {

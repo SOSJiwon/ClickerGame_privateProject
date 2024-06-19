@@ -30,4 +30,21 @@ public class MakeGetDonutUI : MonoBehaviour
 
     }
 
+    public IEnumerator PlayerGetDonut(int AutoDonutCount)
+    {
+        for(int i = 0; i < AutoDonutCount; i++)
+        {
+            savePrefabs.Enqueue(Instantiate(prefab, new Vector3(Random.Range(300, 600),
+            Random.Range(500, 600), 1f), Quaternion.identity, transform));
+        }
+
+        yield return new WaitForSeconds(1f);
+
+        for (int i = 0; i < AutoDonutCount; i++)
+        {
+            GameObject destroyPrefabs = savePrefabs.Dequeue();
+            Destroy(destroyPrefabs);
+        }
+    }
+
 }

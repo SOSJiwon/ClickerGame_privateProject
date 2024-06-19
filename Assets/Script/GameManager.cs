@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         Money.text = $"{playerMoney.ToString()}냥";
 
-        DonutPrice.text = $"{NowDonutLevel.price}냥";
+        DonutPrice.text = $"개당 {NowDonutLevel.price}냥";
         DonutName.text = NowDonutLevel.donutName;
     }
 }

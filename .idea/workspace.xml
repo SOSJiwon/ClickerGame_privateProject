@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd78dc89-5046-486b-9c1b-2e4c7827108a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefebs/GetDonutUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefebs/GetDonutUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ClickDonut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ClickDonut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/MakeAutoDonut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MakeAutoDonut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/MakeGetDonutUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MakeGetDonutUI.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2i4phP2NeCMjgh6DkDqhgYQtoS0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd78dc89-5046-486b-9c1b-2e4c7827108a" name="Changes" comment="" />
+      <created>1718759822851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718759822851</updated>
+    </task>
+    <servers />
+  </component>
+</project>

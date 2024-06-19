@@ -22,7 +22,14 @@ public class MakeAutoDonut : MonoBehaviour
         while (Time.timeScale == 1f)
         {
             GameManager.instance.playerMoney += getDonutPrice * makeAutoDonut;
-            StartCoroutine(MakeGetDonutUI.instance.PlayerGetDonut());
+            if(makeAutoDonut > 1)
+            {
+                StartCoroutine(MakeGetDonutUI.instance.PlayerGetDonut(makeAutoDonut));
+            }
+            else
+            {
+                StartCoroutine(MakeGetDonutUI.instance.PlayerGetDonut());
+            }
             yield return new WaitForSeconds(makeAutoDonutRange);
         }
 
